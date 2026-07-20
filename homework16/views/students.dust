@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{url}</title>
+</head>
+<body>
+    <ul>
+        {#students}
+            <li>Person {name} with level {level}</li>
+        {/students}
+    </ul>
+</body>
+</html>

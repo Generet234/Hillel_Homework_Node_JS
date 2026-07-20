@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{name}</title>
+</head>
+<body>
+    <h1>{name}</h1>
+    <p>{role}</p>
+    {#isOnline}
+            <p>User is online</p>
+        {:else}
+            <p>User is offline</p>
+        {/isOnline}
+    <ul>
+        {#hobbies}
+        <li>{.}</li>
+        {/hobbies}
+    </ul>
+</body>
+</html>
