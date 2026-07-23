@@ -1,5 +1,5 @@
 const Products = require('../models/productModel');
-
+const mongoose = require('mongoose');
 const getProducts = async (req, res) => {
     try{
         const products = await Products.find();
@@ -12,8 +12,8 @@ const getProducts = async (req, res) => {
 
 const getProduct = async (req, res) => {
     try{
+        if(!mongoose.Types.ObjectId.isValid(req.params.id)) return res.status(400).send({message: 'Id is not valid'});
         const foundedProduct = await Products.findById(req.params.id);
-        if(!mongoose.Types.ObjectId.isValid(req.params.id)) res.status(400).send({message: 'Id is not valid'});
         if (!foundedProduct) res.status(404).json({message: 'Product not found'});
         res.json(foundedProduct);
     }
@@ -23,8 +23,8 @@ const getProduct = async (req, res) => {
 }
 const updateProduct = async (req, res) => {
     try{
-        const updatedProduct = await Products.findByIdAndUpdate(req.params.id, req.body);
-        if(!mongoose.Types.ObjectId.isValid(req.params.id)) res.status(400).send({message: 'Id is not valid'});
+        if(!mongoose.Types.ObjectId.isValid(req.params.id)) return res.status(400).send({message: 'Id is not valid'});
+        const updatedProduct = await Products.findByIdAndUpdate(req.params.id, req.body,{ new: true });
         if(!updatedProduct) res.status(404).json({message: 'Product not found'});
         res.json(updatedProduct);
     }
@@ -45,8 +45,8 @@ const createProduct = async (req, res) => {
 }
 const deleteProduct = async (req, res) => {
     try{
-        const deletedProduct = await Products.findByIdAndDelete(req.params.id);
-        if(!mongoose.Types.ObjectId.isValid(req.params.id)) res.status(400).send({message: 'Id is not valid'});
+        if(!mongoose.Types.ObjectId.isValid(req.params.id)) return res.status(400).send({message: 'Id is not valid'});
+        const deletedProduct = await Products.findByIdAndDelete(req.params.id,{ new: true });
         if(!deletedProduct) res.status(404).json({message: 'Product not found'});
         res.json({message: 'Product deleted'});
     }
