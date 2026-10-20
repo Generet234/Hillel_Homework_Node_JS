@@ -1,0 +1,32 @@
+### Усі відгуки
+GET http://localhost:3005/reviews
+
+### 1 відгукS
+GET http://localhost:3005/reviews?bookId=1
+### Додавання нового відгуку з існуючим bookId
+POST http://localhost:3005/reviews
+Content-Type: application/json
+
+{
+  "id": 23,
+  "bookId": 2,
+  "text": "Гарна книга",
+  "rating": 5
+}
+
+### Додавання нового відгуку з неіснуючим bookId
+POST http://localhost:3005/reviews
+Content-Type: application/json
+
+{
+  "id": 23,
+  "bookId": 265,
+  "text": "Гарна книга",
+  "rating": 5
+}
+
+### Видалення відгуку з неробочим id
+DELETE http://localhost:3005/reviews/342
+
+### Видалення відгуку з робочим id
+DELETE http://localhost:3005/reviews/1
