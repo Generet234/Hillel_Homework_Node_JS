@@ -1,0 +1,90 @@
+[
+  {
+    "_id": "6af080ee35c7b76662fab404",
+    "path": "/products",
+    "method": "POST",
+    "userId": null,
+    "productId": null,
+    "timestamp": "2026-11-08T14:02:22.253Z",
+    "createdAt": "2026-11-08T14:02:22.259Z",
+    "updatedAt": "2026-11-08T14:02:22.259Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af08126b1029af5cdc8f264",
+    "path": "/users/register",
+    "method": "POST",
+    "userId": null,
+    "productId": null,
+    "timestamp": "2026-11-08T14:03:18.983Z",
+    "createdAt": "2026-11-08T14:03:18.990Z",
+    "updatedAt": "2026-11-08T14:03:18.990Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af08156b1029af5cdc8f265",
+    "path": "/users/login",
+    "method": "POST",
+    "userId": null,
+    "productId": null,
+    "timestamp": "2026-11-08T14:04:06.454Z",
+    "createdAt": "2026-11-08T14:04:06.455Z",
+    "updatedAt": "2026-11-08T14:04:06.455Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af0817ab1029af5cdc8f266",
+    "path": "/products",
+    "method": "POST",
+    "userId": null,
+    "productId": null,
+    "timestamp": "2026-11-08T14:04:42.056Z",
+    "createdAt": "2026-11-08T14:04:42.057Z",
+    "updatedAt": "2026-11-08T14:04:42.057Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af081da2c52b44f984b3104",
+    "path": "/users/register",
+    "method": "POST",
+    "userId": null,
+    "productId": null,
+    "timestamp": "2026-11-08T14:06:18.590Z",
+    "createdAt": "2026-11-08T14:06:18.597Z",
+    "updatedAt": "2026-11-08T14:06:18.597Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af081f52c52b44f984b3105",
+    "path": "/users/login",
+    "method": "POST",
+    "userId": null,
+    "productId": null,
+    "timestamp": "2026-11-08T14:06:45.550Z",
+    "createdAt": "2026-11-08T14:06:45.551Z",
+    "updatedAt": "2026-11-08T14:06:45.551Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af08266e31fa1d230570f75",
+    "path": "/users/register",
+    "method": "POST",
+    "userId": null,
+    "productId": null,
+    "timestamp": "2026-11-08T14:08:38.659Z",
+    "createdAt": "2026-11-08T14:08:38.665Z",
+    "updatedAt": "2026-11-08T14:08:38.665Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af0829fe31fa1d230570f76",
+    "path": "/products",
+    "method": "GET",
+    "userId": null,
+    "productId": null,
+    "timestamp": "2026-11-08T14:09:35.449Z",
+    "createdAt": "2026-11-08T14:09:35.450Z",
+    "updatedAt": "2026-11-08T14:09:35.450Z",
+    "__v": 0
+  }
+]
